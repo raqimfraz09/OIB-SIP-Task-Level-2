@@ -1,0 +1,123 @@
+* {
+    
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: white;
+    border-radius: 10px;
+}
+
+.newTask {
+    position: relative;
+    padding: 30px 20px;
+}
+
+.newTask input {
+    width: 90%;
+    height: 42px;
+    font-size: 18px;
+    border: 2px solid #4f798f;
+    padding: 10px;
+    color: #111111;
+    position: relative;
+    border-radius: 7px;
+}
+
+.newTask input:focus {
+    outline: none;
+    border-color: #4e4cff;
+}
+
+.newTask button {
+    position: relative;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #4e4cff;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+
+#task {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 5px;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.task {
+    background-color: #e5e5e5;
+    height: 50px;
+    margin-bottom: 8px;
+    padding-left: 5px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.task span {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.delete {
+    background-color: rgb(59, 87, 86);
+    color: #ffffff;
+    height: 100%;
+    width: 50px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.taskCheck {
+    display: flex;
+    align-items: center;
+}
+
+.taskCheckbox {
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+}
+
+.taskCheckbox:checked+#taskname {
+    text-decoration: line-through;
+}
+
+h1 {
+    word-spacing: 6px;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    font-family: fantasy;
+    text-align: center;
+    font-size: 36px;
+    line-height: 3.6;
+    margin: 1em 0 0.5em 0;
+	color: #343434;
+	font-weight: normal;  
+	text-transform: uppercase;
+	text-shadow: 2px 2px 2px  rgb(218, 168, 168), 0 3px rgb(169, 47, 47);
+}
